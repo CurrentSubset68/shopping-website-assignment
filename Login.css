@@ -1,0 +1,29 @@
+body { /* sets universal font */
+    font-family: sans-serif;
+}
+.loginf { /* fixes the footer at the bottom of the screen */
+    position:fixed;
+    display:flex;
+    justify-content: center;  
+    
+}
+
+.login{
+   
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.register{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+}
+.reviewbutton{
+   
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}

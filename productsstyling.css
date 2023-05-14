@@ -1,0 +1,81 @@
+body {  /* sets universal font */
+    font-family: sans-serif;
+}
+footer { /* sets the position of the footer and scales it properly */
+position: relative;
+margin: 0em;
+padding:0em;
+width: 100.6%;
+margin-bottom: -1em;
+margin-left: -0.5em;
+}
+
+.bannertext { /* centers the navigation menu */
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    padding: 0.0em;
+    margin: 0em;
+    justify-content: space-around;
+    position: relative;
+    z-index: +1;
+}
+.bannerelements a { /* centers the navigation menu */
+    font-family: sans-serif;
+    font-weight:lighter;
+    text-decoration: none;
+    color: white;
+    position: relative;     
+}
+header { /* sticks the header to the top of the page */
+    position: sticky;
+    top: 0em;
+    margin: -0.5em;
+    background-color: #BE1622;
+}
+
+.sortlist { /* displays the sort buttons in a row */
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.sortlist li { /* spacing for the buttons */
+    margin: 0.1em;
+    padding: 0em;
+    direction: ltr;
+}
+.sortlist button { /* decoration for the buttons */
+    font-family: sans-serif;
+    font-size: 1em;
+    color: black;
+    background-color: rgb(249, 249, 238);
+    border-width: 0.1em;
+}
+
+#php_pass{
+    visibility: hidden;
+    display: none
+    
+}
+
+@media screen and (min-width: 414px) and (max-width: 1080px) { /* vertically aligns the navigation menu when shrinked */
+    .bannertext {
+        display: flex;
+        flex-direction:column;
+        margin: 1em;
+    }
+  
+ 
+}
+
+@media screen and (max-height: 1078px) { /* makes the footer stay at the bottom of the page when the screen space is small. only works with the media control underneath it. */
+    footer {  
+        background-color: #34516c;
+        width: 99.6%;
+        left: 0em;
+        bottom: 0em;
+        position: relative;
+        padding: 0.59em;
+        margin: -0.49em; 
+    }
+}

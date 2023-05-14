@@ -1,0 +1,8 @@
+body { /* sets universal font */
+    font-family: sans-serif;
+}
+.cartf { /* fixes the footer at the bottom of the screen */
+    position:fixed;
+    display:flex;
+    justify-content: center;  
+}

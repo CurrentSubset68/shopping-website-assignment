@@ -1,0 +1,320 @@
+body {  /* sets universal font */
+    font-family: sans-serif;
+}
+
+.bannertext  { /* flex-direction and justify content are used to space the list elements into rows, making them appear as buttons. list-style is used to get rid of bullet points */
+    display: flex;
+    list-style-type: none;          
+    flex-direction: row;
+    padding: 0.5em;
+    margin: 0em;
+    justify-content: space-around;
+    
+}
+   
+.bannerelements a { /* text-decoration is used to get rid of the hyper link underline, the font is set as well as the colour. */
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight:lighter;
+    text-decoration: none;
+    color: white;
+}
+.bannerelements a:hover { /*the a:hover is to change the colour of the navigation link when hovered over*/
+    color: darkgray;
+}
+
+#php_pass{
+    visibility: hidden;
+    display: none
+    
+}
+header { /* sticky is used to make sure that the header follows the screen at all times, and the z-index is to make sure that it floats infront of the videos and text. colour is also set. */
+    position: sticky;
+    background-color: #BE1622;
+    margin: -0.5em;
+    padding: 0em;
+    z-index: +10; 
+}
+footer { /* fixes the footer on the bottom of the page and sets the colour. */
+    background-color: #34516c;
+    width: 150%;
+    position: fixed;
+    left: 0em;
+    bottom: 0em;
+    padding: 0em;
+    margin: 0em;
+}
+
+footer li { /* centers the list elements of the footer. */
+    padding: 3em;
+    font-family: sans-serif;
+    text-align: center;
+}
+footer li a { /* sets the colour of the links and removes the link underline.*/
+    text-decoration: none;
+    color: black;
+}
+
+footer li a:hover { /* sets the hover colour*/
+    color: #353535;
+}
+footer ul { /* sets up the list to appear as a collection of links */
+    list-style: none;
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: center;
+    padding: 0em;
+    margin: 0em;
+}
+
+
+
+@media screen and (min-width: 414px) and (max-width: 1080px) { /* adjusts the header  to the current screen space */
+    .bannertext { /* puts the navigation menu into a column when the screen is small */
+        display: flex;
+        flex-direction:column;
+        padding: 0em;
+        margin: 1em;
+        justify-content: space-around;
+        direction: rtl;
+        float: right;
+        z-index: +10;
+    }
+    .bannerelements a { /* font resizing for the navigation menu */
+        font-family: sans-serif;
+        font-size: 1em;
+    }
+}
+
+.mp4div { /* centers the mp4 video */
+    display: flex;
+    justify-content: center;
+    padding: 0em;
+    margin: 0em;
+    margin-bottom: 1em;
+    z-index: 0;
+    position: relative;
+}
+.embdiv { /* centers the youtube embed*/
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 3em;
+    border: none;
+}
+
+.embed{ /* centers the embeded youtube video */
+    padding: 2.5em;
+    margin:  0em;
+    z-index: +5;
+    border: 0em;
+}
+
+.mp4{ /* centers the mp4 video */
+    margin: -3em;
+    z-index: +5;
+    border: 0em;
+}
+
+.text { /* centers, wraps and formats the site discription */
+   margin: 2em; 
+   padding: 0em;
+   font-family: sans-serif;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   text-align: center;
+}
+
+body { /*sets background colour*/
+    background-color: #c7c8da;
+    list-style: none;
+}
+
+.h{
+    color:#919cad;
+    flex-direction:column;
+    display: flex;
+    font-family: sans-serif;
+    position: sticky;
+    padding-top: 0em;
+    padding-bottom: 10em;
+    margin: 0.5em;
+    text-align: center;
+    border-radius: 0.7em;
+    list-style: none;
+}
+
+.image {
+   font-family: sans-serif;
+   width: 50%;
+   
+   
+   
+}
+
+.clothslistd {
+    background-color:#919cad;
+    flex-direction:column;
+    display: flex;
+    font-family: sans-serif;
+    position: sticky;
+    padding-top: 0em;
+    padding-bottom: 10em;
+    margin: 0.5em;
+    text-align: center;
+    border-radius: 0.7em;
+    list-style: none;
+    width: 35em;
+    height: 30em;
+    
+    
+}
+.clothslist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0em;
+    margin: 0em;
+    justify-content: center;
+    
+}
+
+   
+    
+
+.offerslistd {
+    background-color:#919cad;
+    flex-direction:column;
+    display: flex;
+    font-family: sans-serif;
+    position: sticky;
+    padding-top: 0em;
+    margin: 0.5em;
+    text-align: center;
+    border-radius: 0.7em;
+    list-style: none;
+    width: 35em;
+    height: 10em;
+    
+    
+}
+
+.offerslist{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1em;
+    margin: 1em;
+    justify-content: center;
+    
+    
+}
+
+
+
+.identifier { /* sets a number on each tile. absolute is to make it appear in the top-left */
+    position: absolute;
+    margin: 0.3em;
+    z-index: +1;
+    font-family: sans-serif;
+}
+
+.price { /* makes the price bold so the user can see it easily */
+    margin: 0em;
+    padding: 0em;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.discr li { /* sets font of the discription */
+    margin: 5em;
+    padding: 0em;
+    text-align: center;
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    width: 10%;
+    height: 10%;
+}
+
+/*#clothslist{ /* displays each array element as a tile in a responsive layout */
+  /*  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0em;
+    margin: 0em;
+}*/
+/*#clothslist li { /* formats each list element to look like a tile, alongside clothslist and clothslist div */
+  /*  display: flex;
+    width: 35em;
+    height: 30em;
+    margin: auto;
+    padding: 0.5em;
+}*/
+#clothslist li p { /* sets font of each paragraph tag*/
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+/*.productimg { /*formats the image in each tile*/
+  /*  margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -8.5em;
+    font-family: sans-serif;
+}*/
+
+.name { /* formats the name in each tile*/
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.button { /* formats the button in each tile */
+    font-family: sans-serif;
+    font-size: large;
+    font-weight: 400;
+    position: static;
+    z-index: +20000;
+    padding: 0em;
+    margin: 0.5em;
+    background-color: transparent;
+    color: rgb(17, 77, 119);
+    border: none;
+}
+
+.button a { /*formats the hyperlink in each button */
+    text-decoration: none;
+    z-index: +20000;
+    padding: 0em;
+    margin: 0em;
+    color: rgb(43, 43, 189);
+}
+
+#confirm { /* formats the buy button on the item page.*/
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+.buybutton{ /* centers and colours the buttons on the cart  */
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    border: transparent;
+    color: rgb(41, 22, 22);
+    background-color: beige;
+    font-size: large;
+    margin: 0.3em;
+    padding: 0.4em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+.buydiv { /* extra centering for the cart buttons */ 
+    display: flex;
+    justify-content: center;
+}
+
